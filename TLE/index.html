@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<title>The Event Factory</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="../CSS/layout.css" rel="stylesheet" type="text/css" media="all" >
+<link rel="stylesheet" href="../CSS/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../CSS/font-awesome-4.7.0/css/font-awesome.css">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cooper-hewitt" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+
+<script>
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+	});
+
+var slideIndex = 0;
+
+owSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+
+</script>
+
+
+<link rel = "icon" href ="../Images/title_logo.png"  type = "image/icon">
+
+</head>
+<body>
+  <div class="se-pre-con"></div>
+
+<body id="top">
+    <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+
+      <div class="fl_left">
+        <img class= "logo"src="../Images/TheEvent factoryNewLogo.png" alt="" >
+      </div>
+
+      <div id="logo" class="fl_left">
+      <h1 > <a href="index.html">The Event Factory</a></h1>
+    </div>
+
+
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li><a href="ourbackground.html">About </a></li>
+            <li><a href="services.html">Services</a></li>
+						<li><a href="wedding.html">Events</a></li>
+            <li><a href="new.html">Careers</a></li>
+            <li><a href="displayblog.php">Blog</a></li>
+             <li><a href="display.php">Gallery</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+
+
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+  <div  class="hoc clear" >
+    <div class="anime">
+    <div class="centered"></div>
+    <div class="slideshow-container anime">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+
+        <img class= "sldimg" src="../Images/bg1.jpg" >
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img class= "sldimg" src="../Images/bg2.jpg">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+
+        <img class= "sldimg" src="../Images/bg3.jpg">
+        <div class="text"></div>
+      </div>
+  </div>
+</div>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+
+    <div>
+      <h1 class="ca line">The Event Factory
+        <br>
+
+        <br> One Stop Solution for all your events!</h1>
+    </div>
+
+
+
+    <div class="top"><article>
+
+      <footer class="center newbtn cr txt"><a class=" btn" href="contactus.html">Get in Touch!</a></footer>
+    </article>
+    </div>
+
+  </div>
+
+
+
+  <!-- ################################################################################################ -->
+
+
+<div class="wrapper row2">
+  <main class="hoc container clear " style="background: rgb(238,174,202);">
+    <div class="group excerpt" >
+      <div class="sectiontitle">
+        <h1 class="header">Welcome to The Event Factory!</h1>
+
+      </div>
+      <article class="one_half first bg">
+        <a class="imgover btmspace-30" href="ourbackground.html">
+        <div class="hvrbox">
+          <div class="images-conatiner">
+             <img class="bggimg"src="../Images/ourbackground_bg.png" alt="Our Background">
+         </div>
+        <div class="hvrbox-layer_top">
+		      <div class="hvrbox-text">Get to know our background</div>
+  	  </div>
+      </div>
+      </a>
+      <p id="bgdata " class="txt" style="font-family: 'Poppins', sans-serif;">From the day we start to this day, we have 10 years of experience which holds us together.
+          Take a look back to<br> THE EVENT FACTORY.</p>
+        <footer><a href="ourbackground.html" class="det" style="font-family: 'Poppins', sans-serif;">More details</a></footer>
+      </article>
+
+
+
+      <article class="one_half bg">
+        <a class="imgover btmspace-30" href="ourspecilization.html">
+            <div class="hvrbox">
+                <div class="images-conatiner">
+                    <img class="bggimg" src="../Images/ourspecilization_bg.png" alt="Our specializations">
+               </div>
+      <div class="hvrbox-layer_top">
+      <div class="hvrbox-text">Know how we stand out from others</div>
+      </div>
+    </div>
+  </a>
+    <p id="bgdata" class="txt" style="font-family: 'Poppins', sans-serif;">For all your events from top to bottom, we are there.
+          Sit back and take a look <br> at our specializations
+          <br>
+          <br>
+        </p>
+        <footer><a href="ourspecilization.html" class="det" style="font-family: 'Poppins', sans-serif;">More details</a></footer>
+      </article>
+    </div>
+    <div class="clear"></div>
+  </main>
+</div>
+
+
+<!-- ################################################################################################ -->
+<div class="wrapper row2 bgled overlay" style="background: #2e5090;">
+  <section class="hoc container clear">
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h1 class="events">Events</h1>
+    </div>
+    <ul class="nospace group overview">
+      <li class="one_third" style="margin-left: -30px"; >
+        <article><a href="engagement.html"><i class="fa fa-gift" aria-hidden="true"></i></a>
+          <h6 class="heading"><a href="engagement.html">Engagements</a></h6>
+          <p class="txt" >It's not just a day of promise<br> So, let us handle your most special day with a smile!</p>
+          <footer><a href="engagement.html">View Details</a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="wedding.html"><i class="fa fa-asl-interpreting"></i></a>
+          <h6 class="heading"><a href="wedding.html">Weddings</a></h6>
+          <p  class="txt" >Bringing families and friends together through Marriages, Dance Programmes and much more</p>
+          <footer><a href="wedding.html">View Details </a></footer>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="corporate.html"><i class="fa fa-handshake-o"></i></a>
+          <h6 class="heading"><a href="corporate.html">Corporate events</a></h6>
+          <p  class="txt" >Lets us handle your networking and events with Professionalism, Passion and perseverance </p>
+          <footer><a href="corporate.html">View Details</a></footer>
+        </article>
+      </li>
+      <li class="one_third" id="pi">
+        <article><a href="birthday parties.html"><i class="fa fa-child"></i></a>
+          <h6 class="heading"><a href="birthday parties.html">Birthday Parties</a></h6>
+          <p  class="txt" >Ah,this will be the best birthday ever!<br>Let us handle, you go chill and party with your loved ones!</p>
+          <footer><a href="birthday parties.html">View Details</a></footer>
+        </article>
+      </li>
+      <li class="one_third rr">
+        <article><a href="college events.html"><i class="fa fa-users" aria-hidden="true"></i></a>
+          <h6 class="heading"><a href="college events.html">College Events</a></h6>
+          <p  class="txt" > It's not just about the dance and song<br> It's about making the perfect and most memorable experience.</p>
+          <footer><a href="college events.html">View Details</a></footer>
+        </article>
+      </li>
+    </ul>
+    <footer class="center"><a class="btn" href="wedding.html">View Details</a></footer>
+  </section>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<div class="Wrapper" style="background-color: #8ab0db">
+  <section class="hoc container clear">
+
+    <div class="sectiontitle">
+      <h3 class="events" style="color:#ffffff;">Services</h3>
+
+    </div>
+
+    <ul class="nospace group overview">
+      <li class="one_third"style="margin-left: -30px">
+        <article><a href="services.html"><i class="fa fa-cutlery icon"aria-hidden="true"></i></a>
+          <h6 class="heading con"><a class= "icon2" href="services.html">Catering </a></h6>
+          <p class="para txt" style="color:#000000;">What's better than a happy tummy<br> So, let us handle your most special dish with a smile!</p>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="services.html"><i class="fa fa-bitbucket icon"></i></a>
+          <h6 class="heading con"><a  class= "icon2" href="services.html">Design</a></h6>
+          <p class="para txt" style="color:#000000;">A good design is something normal, if you want extraordinary ones, you know to contact us!</p>
+
+        </article>
+      </li>
+      <li class="one_third rr">
+        <article><a href="services.html"><i class="fa fa-handshake-o icon"></i></a>
+          <h6 class="heading con"><a class= "icon2" href="services.html">Decoration</a></h6>
+          <p class="para txt" style="color:#000000;">To have the most beautiful lighting, flowers and florals is such a blessing,<br> and that's why are here. </p>
+
+        </article>
+      </li>
+    </ul>
+
+    <footer class="center darkbtn"><a class="btn" href="services.html">View All</a></footer>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+<!-- ################################################################################################ -->
+
+<div class="wrapper row2 bgled overlay" style="background-color: #b9e9ff;">
+  <section class="hoc container clear testimonials">
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h2 class="heading team">Testimonials</h2>
+      <p class=" fact">We strive to give our best in every event we do,so here's what our clients think of us.</p>
+    </div>
+
+
+  <div class="testimonials">
+    <ul>
+      <li class="one_third first">
+
+      <figure class="clear imgbox"><img src="../Images/testhome1.jpeg" max-width="1" max-height="1">
+      <figcaption>
+        <blockquote style="color: #000000;"  class="txt">
+          " Every event that I have witnessed, The Event Factory has conducted,
+           left me absolutely awestruck and delighted."
+        </blockquote>
+        <h6 class="heading fact">Raghu and Rani</h6>
+        <em class="fact"> Wedding </em></figcaption>
+      </figure>
+    </li>
+
+      <li class="one_third">
+
+      <figure class="clear imgbox"><img src="../Images/testhome2.jpeg" max-width="1" max-height="1">
+      <figcaption>
+        <blockquote style="color: #000000;"  class="txt">"These guys are young and promising.
+          Keep up the zeal, enthusiasm & the great work you guys are already doing."
+        </blockquote>
+        <h6 class="heading fact">Divya</h6>
+        <em class="fact"> Engagements </em></figcaption>
+      </figure>
+      </li>
+
+
+      <li class="one_third">
+
+      <figure class="clear imgbox"><img src="../Images/testhome3.jpeg" max-width="1" max-height="1">
+      <figcaption>
+        <blockquote style="color: #000000;"  class="txt"> "They ended up delivering more than what we had asked for or hoped for in our event.
+               Great work!!"
+        </blockquote>
+        <h6 class="heading fact">NMKRV</h6>
+        <em class="fact"> College Events</em></figcaption>
+      </figure>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <footer class="center darkbtn"><a class="btn" href="displaydata.php">View All</a></footer>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+<!-- ################################################################################################ -->
+
+
+
+
+<!-- ################################################################################################ -->
+<div class="wrapper row2 bgded overlay" style="background-color: #47a4a9;
+background-image: linear-gradient(180deg, #47a4a9 0%, #a18686 50%, #ffffff 100%);
+ ">
+  <section class="hoc cta clear">
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h3 class="heading fact">Get in touch</h3>
+      <p class="txt2">Drop the hustle, We will do it for you</p>
+        <br>
+        <p class="txt2">With our 50+ events and various experiences, We assure you the best serive posssible</p>
+        <br>
+        <p class="txt2">Be the Guest at your own event!</p>
+    </div>
+    <section class="numbers_section">
+    <div class="container">
+      <ul class="numbers countarea">
+        <li> <i class="fa fa-cubes" aria-hidden="true"></i>
+          <h3>2010</h3>
+          <span>Founded</span> </li>
+        <li> <i class="fa fa-clock-o" aria-hidden="true"></i>
+          <h3>10,000+</h3>
+          <span>Total Hours</span> </li>
+        <li> <i class="fa fa-coffee" aria-hidden="true"></i>
+          <h3>1000+</h3>
+          <span>Cups Of Coffee</span> </li>
+        <li> <i class="fa fa-calendar" aria-hidden="true"></i>
+          <h3> 150+</h3>
+          <span>Events Completed</span> </li>
+        <li> <i class="fa fa-smile-o" aria-hidden="true"></i>
+          <h3>Happy Clients</h3>
+          <span>Reward</span> </li>
+      </ul>
+    </div>
+
+  <footer class="center darkbtn"><a class="btn con" href="contactus.html">Contact Us</a></footer>
+  </section>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <article class="one_quarter first">
+      <h6 class="heading txt">The Event Factory.</h6>
+      <p class="txt" style="text-align:justify">The Event Factory is a start-up hustling it's way to be the Number 1 Event Managaement company. </p>
+      <p class="txt" style="text-align:justify">We work keenly on all your events and deliver the best possible service that will leave you amazed. </p>
+      <p class="txt" style="text-align:justify"> As our moto says, "One Stop Solutions for all events" becuase we will do everything for you. </p>
+
+      <p class="nospace"> <button type="button" name="button" > <a href="AdminLogin.php" class="btn2">Admin Login</a></button></p>
+    </article>
+    <div class="one_quarter">
+      <h6 class="heading">Our details</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          #498, 1st Cross, Ayyappa Layout, Marathahalli, Bangalore - 560 037
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +91 98807 00928</li>
+        <li><i class="fa fa-envelope-o"></i>  thomaschacko@gmail.com</li>
+
+      </ul>
+      <ul class="faico">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/eventfactory29/" target="_blank">
+          <i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com/EventFactory8" target="_blank">
+          <i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-instagram" href="https://www.instagram.com/eventfactory29/" target="_blank">
+          <i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/in/event-factory-126172212/" target="_blank">
+          <i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Our Recent Events</h6>
+      <ul class="nospace linklist">
+        <li><a class="foota" href="displaydata.php">The Thomas' auspicious wedding </a></li>
+        <li><a class="foota" href="displaydata.php">Grand Marriage of Aryans</a></li>
+        <li><a class="foota" href="displaydata.php"> Isha's Naming Ceremony</a></li>
+        <li><a class="foota" href="displaydata.php">The Justdial Conference!</a></li>
+        <li><a class="foota" href="displaydata.php">All events</a></li><br>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Our Recent Blogs</h6>
+      <ul class="nospace linklist">
+        <li><a class="foota" href="displayblog.php"> The Vintage engagement.</a></li>
+        <li><a class="foota" href="displayblog.php">Eco Friendly Wedding Ideas</a></li>
+        <li><a class="foota" href="displayblog.php"> Ideas for Corporate event</a></li>
+        <li><a class="foota" href="displayblog.php">Attendees and Entertainment</a></li>
+        <li><a class="foota" href="displayblog.php">All blogs</a></li> <br>
+      </ul>
+    </div>
+
+    <!-- ################################################################################################ -->
+    <p> © 2021 The Event Factory.com . All Rights Reserved.</p>
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+</body>
+</html>

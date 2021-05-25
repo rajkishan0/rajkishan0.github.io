@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> The Event Factory Services</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="../CSS/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../CSS/font-awesome-4.7.0/css/font-awesome.css">
+<link rel = "icon" href ="../Images/title_logo.png"  type = "image/icon">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+background-color: #F0FFFF;
+
+
+}
+.mySlides {display: none;}
+img {vertical-align: middle;margin-left:10px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin-left: 150px;
+
+}
+/* Number text*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+* {
+  box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  background-image: rgba(255,0,0,0);
+}
+img{
+
+  height: 500px;
+}
+
+a{color: #04DEE0;}
+a:hover{color: rgba(47,71,79,1)}
+
+.sidenav
+ {
+  height:2000px;
+  width: 190px;
+  position:absolute;
+  z-index: 1;
+  left: 0;
+background: rgb(0,0,0);
+
+ background-image: linear-gradient(to right, rgba(255,0,0,0), #098a9c);
+  overflow-x: hidden;
+}
+.sidenav a
+{
+  margin-top: 35px;
+  color: #F0FFFF;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+
+}
+.sidenav a:hover
+ {
+  background-color:#BBFFFF;
+  color: black;
+}
+.sidenav>.home{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.content
+{
+  margin-left: 200px;
+  padding-left: 20px;
+  display: block;
+}
+#hea{
+  color:ffffff;
+  text-align: center;
+  font-size:2rem;
+  text-align: justify;
+  text-align: center;
+  font-family: 'Poppins',sans-serif;
+}
+
+.hi
+{padding:50px;}
+
+#dj
+{
+  length:603px;
+  width: 906px;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  display: block;
+  margin:auto;
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.card{
+    background: white;
+    margin: 40px;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s;
+    box-shadow: 1px 1px 5px #098a9c;
+
+    position: relative;
+    overflow: hidden;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(247, 247, 247);
+    z-index: 1;
+}
+.card::after
+{
+    content: 'Event Factory';
+    position: absolute;
+    top: 90px;
+    left: -30px;
+    width: 200px;
+    height: 40px;
+    background:#098a9c;
+    color: black;
+    transform-origin: left;
+    transform: rotate(-45deg);
+    line-height: 40px;
+    text-align: center;
+    z-index: 15;
+    transition: all .4s;
+}
+.card:hover::after{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+}
+.card h2
+{
+    margin: 20px 0;
+    z-index: 10;
+}
+.card p
+{
+    margin: 10px 0;
+}
+
+p{
+  font-size: 1.2rem;
+  text-align: justify;
+
+  font-family: 'Poppins',sans-serif;
+  margin-right:25px;
+
+}
+h7{
+  font-size: 1.2rem;
+  margin-left: 280px;
+
+  font-family: 'Poppins',sans-serif;
+
+}
+li{
+  font-size: 1.2rem;
+font-family:inherit;
+
+}
+
+@keyframes expand {
+  0% {
+    transform: translateY(1400px);
+  }
+}
+
+.thing {
+  padding: 1rem;
+  width:auto;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+
+  border-left: 0 solid #00ff99;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.thing:hover {
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid #00ff99;
+}
+
+.thing > :first-child {
+  margin-top: 0;
+}
+
+.thing > :last-child {
+  margin-bottom: 0;
+}
+
+.heading {
+  color: #fff;
+}
+
+
+header{
+  width: 100%;height:auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7),
+                      rgba(0,0,0,0.7)),
+                      url('headerbg.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+header nav .logotxt{
+  text-transform: uppercase;
+  color: #3079ed;
+  float:left;
+  margin:5px;
+  color: #fff1eb;
+  font-size: 1.8rem;
+  padding: 15px;
+
+}
+
+header nav ul{
+  display: flex; list-style: none;
+}
+
+header nav ul li{ margin-left: 30px; }
+
+header nav ul li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+header nav ul li a.actives, header nav ul li a:hover{
+  color: #3079ed;
+  font-size: 1.4rem;
+}
+
+</style>
+</head>
+<header>
+  <nav>
+
+    <h1 class="logotxt">The Event Factory</h1>
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="ourbackground.html" >About</a></li>
+      <li><a href="wedding.html" class="actives">Events</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="new.html">Career</a></li>
+      <li><a href="displayblog.php">Blog</a></li>
+      <li><a href="display.php">gallery</a></li>
+      <li><a href="contactus.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+<body  id=body>
+
+  <div class="sidenav">
+
+
+    <a href="wedding.html">Weddings</a>
+    <a href="engagement.html">Engagements</a>
+    <a href="corporate.html">Corporate Events</a>
+    <a href="birthday parties.html">Birthday Parties</a>
+    <a href="college events.html">College Events</a>
+
+  </div>
+</div>
+
+<div class="content">
+<h2 id=hea>Weddings</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="../Images/wed 1.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="../Images/wed 2.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="../Images/wed 3.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="../Images/wed 4.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="../Images/wed 5.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="../Images/wed 6.jpeg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="../Images/wed 7.jpeg" style="width:100%">
+
+</div>
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+<div class="main">
+        <div class="card">
+            <h2>Strengths</h2>
+            <p><strong>Highly</strong> Customisable </p>
+            <p><strong>Unique</strong> Concepts</p>
+            <p><strong>Handpicked  </strong> materials</p>
+        </div>
+        <div class="card">
+              <h2><strong>Pricing</strong> easy</h2>
+              <p><strong>Affordable</strong> budget</p>
+              <p><strong>Individualized</strong> offers</p>
+              <p><strong>Budget</strong> Friendly</p>
+        </div>
+        <div class="card">
+          <h2>Experience</h2>
+          <p><strong>10 years </strong>strong</p>
+          <p><strong>Experienced</strong> Coordinators</p>
+          <p><strong>Highly</strong> skilled team</p>
+
+        </div>
+    </div>
+    <p>Are those the wedding bells we hear from your side?  Well, in that case firstly our heartfelt wishes to your new awaited life!<br>
+
+Indian Wedding is like a festival, the celebrations and festivities create an aura of joy and excitement.
+
+ Our endeavor is to give you something new and unique each time and make sure you have the BEST DAY EVER with a heartfelt smile.<br>
+
+Before you let that magical feeling to be overpowered by the qualms and nerves from approaching the big day, let us join hands together and make
+this magical feeling last longer.</p>
+
+<p>What we provide:</p>
+<ul>
+  <li>Food and Beverages</li>
+  <li>Decoration</li>
+  <li>Lighting and Sound</li>
+  <li>Photographer and Videographer</li>
+  <li>Venue</li>
+  <li>Entertainers</li>
+  <li>Hospitality</li>
+
+</p>
+<h7>For more information, feel free to CONTACT US!</h7>
+
+
+
+</body>
+</html>

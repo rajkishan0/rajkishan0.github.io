@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Careers</title>
+    <link rel="stylesheet" href="../CSS/career.css" />
+</head>
+<body>
+
+
+<header>
+  <nav>
+
+    <h1 class="logotxt">The Event Factory</h1>
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="ourbackground.html" >About</a></li>
+      <li><a href="wedding.html">Events</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="new.html" class="actives">Career</a></li>
+      <li><a href="displayblog.php">Blog</a></li>
+      <li><a href="display.php">gallery</a></li>
+      <li><a href="contactus.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <section class="tab">
+      <div class="tab-container">
+        <ul class="tab-nav">
+          <li class="active"> Our Jobs</li>
+          <li>Our Partners</li>
+          <li>Our Internships</li>
+        </ul>
+        <div class="tab-body active">
+          <div class="tab-col-left">
+            <img src="../Images/illustration-features-tab-1.svg" alt="illustration" />
+          </div>
+          <div class="tab-col-right">
+            <h2>The Perfect start to your career</h2>
+            <p>
+            Do You Have Ideas, Ingenuity & Passion For Making A Difference? Become A Part Of Our Team.
+            Explore our various roles and all the fun things you can do with us.
+            </p>
+            <a href="newcareer.html" class="btn">More Info</a>
+          </div>
+        </div>
+        <div class="tab-body">
+            <div class="tab-col-left">
+              <img src="../Images/illustration-features-tab-2.svg" alt="illustration" />
+            </div>
+            <div class="tab-col-right">
+              <h2> The best in the business, especially for you!</h2>
+              <p>
+              You deserve the best possible service, that's why we will give you the perfect team, Click to have a look into our team.
+              </p>
+              <a href="newpartner.html" class="btn">More Info</a>
+            </div>
+          </div>
+          <div class="tab-body">
+            <div class="tab-col-left">
+              <img src="../Images/illustration-features-tab-3.svg" alt="illustration" />
+            </div>
+            <div class="tab-col-right">
+              <h2>A dive into the world filled with excitement. </h2>
+              <p>
+                We understand your multitasking lifestyle, that's exactly Why
+                we want to give you the insights of the corporate world
+              </p>
+              <a href="newinternships.html" class="btn">More Info</a>
+            </div>
+          </div>
+        </div>
+      </section>
+  <script >
+
+  const tabNavList = document.querySelectorAll('.tab-nav li');
+  const tabBody = document.querySelectorAll('.tab-body');
+
+  tabNavList.forEach((item,index,listArray)=>{
+      item.addEventListener('click',()=>{
+          if(item.classList.contains('active')){
+              return;
+          }else{
+              document.querySelector('.active').classList.remove('active');
+              item.classList.add('active');
+          }
+
+          if(listArray[0].classList.contains('active')){
+              tabBody[0].classList.add('active');
+              tabBody[1].classList.remove('active');
+              tabBody[2].classList.remove('active');
+          }
+
+          if(listArray[1].classList.contains('active')){
+              tabBody[1].classList.add('active');
+              tabBody[0].classList.remove('active');
+              tabBody[2].classList.remove('active');
+          }
+
+          if(listArray[2].classList.contains('active')){
+              tabBody[2].classList.add('active');
+              tabBody[1].classList.remove('active');
+              tabBody[0].classList.remove('active');
+          }
+      })
+  })
+
+
+  </script>
+  </body>
+  </html>

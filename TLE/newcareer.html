@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Embedding Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>Our Jobs</title>
+
+    <link rel="stylesheet" href="../CSS/newcareer.css" />
+  </head>
+  <body>
+
+
+    <header>
+  <nav>
+
+    <h1 class="logotxt">The Event Factory</h1>
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="ourbackground.html" >About</a></li>
+      <li><a href="wedding.html">Events</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="new.html" class="actives">Career</a></li>
+      <li><a href="displayblog.php">Blog</a></li>
+      <li><a href="display.php">gallery</a></li>
+      <li><a href="contactus.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+    <div class="slider">
+      <button class="prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="next"><i class="fas fa-chevron-right"></i></button>
+      <div class="slides-container">
+        <div class="slide active">
+          <div class="col-left">
+            <h2>HR Manager</h2>
+            <p>
+              You know you will have fun when you are literally telling
+              everyone what to do and managing all our human resources,
+              from hiring the most exciting talent to catering all the needs,
+              you will make sure you  have it all in your pocket.
+            </p>
+          </div>
+          <div class="col-right">
+            <img src="../Images/HR.png" alt=""  />
+          </div>
+        </div>
+        <div class="slide">
+            <div class="col-left">
+              <h2>Photographer/</h2>
+              <h2>Videographer</h2>
+              <p>
+                You know your selfless service and your memorable
+                photos will be cherished for generations to come,
+                and if you like making people smile when they see you,
+                you know you should definitely work with us.
+              </p>
+            </div>
+            <div class="col-right">
+              <img src="../Images/Photographer.png" alt=""/>
+            </div>
+          </div>
+        <div class="slide">
+            <div class="col-left">
+              <h2>Production Engineer</h2>
+              <p>
+                You know you are a big personality when you handle the center of attention,
+                 from the stage to the sound, from the bride to birthday,
+                 we always need you longlasting energy and at the moment decision making skills,
+                  So why waiting? Apply tday!
+              </p>
+            </div>
+            <div class="col-right">
+              <img src="../Images/PE.png" alt="" />
+            </div>
+          </div>
+
+        <div class="slide">
+            <div class="col-left">
+              <h2>Electrical Engineer</h2>
+              <p>
+                What did you say? You liked the decor and lightings?
+                We are sure you do,and if you know the tricks and taunts
+                behind all that power you manage, join us today to make a
+                lot more events, as beautiful as you!
+              </p>
+            </div>
+            <div class="col-right">
+              <img src="../Images/EE.png" alt="" />
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <script >
+
+      const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const slides = document.querySelectorAll(".slide");
+
+let currentIndex = 0;
+
+next.addEventListener("click", () => {
+if (currentIndex == slides.length - 1) {
+  currentIndex = 0;
+  document.querySelector(".active").classList.remove("active");
+  slides[currentIndex].classList.add("active");
+  return;
+}
+
+if (currentIndex < slides.length) {
+  document.querySelector(".active").classList.remove("active");
+  currentIndex++;
+  slides[currentIndex].classList.add("active");
+}
+});
+
+prev.addEventListener("click", () => {
+if (currentIndex == 0) {
+  currentIndex = slides.length - 1;
+  document.querySelector(".active").classList.remove("active");
+  slides[currentIndex].classList.add("active");
+  return;
+}
+
+if (currentIndex < slides.length) {
+  document.querySelector(".active").classList.remove("active");
+  currentIndex--;
+  slides[currentIndex].classList.add("active");
+}
+});
+
+      </script>
+
+
+
+      <button class="signUp btn"> Apply Here!</button>
+
+
+      <div class="form-modal">
+      	<div class="modal-content">
+      		<div class="content-wrapper">
+      			<div class="close"> + </div>
+      			<form  method="POST"  name="Careers Contact" onsubmit = "return validate();" action="careercontact.php">
+      	<div class="app-form-group">
+      		<label>
+      		<input class="app-form-control" placeholder="NAME"  name="Name" id="Name" type="text" required>
+      	</label>
+      	</div>
+      	<div class="app-form-group">
+      		<label>
+      		<input class="app-form-control" placeholder="Enter your EMAIL" name="EMail" id="EMail" type="email" required>
+      	</label>
+      	</div>
+      	<div class="app-form-group">
+      		<label>
+      		<input class="app-form-control" placeholder="Enter Mobile Number" name="Number" id="Number"  required>
+      		</label>
+      	</div>
+
+
+      	<div class="app-form-group message">
+      		<label>
+      		<input class="app-form-control" placeholder="Enter the role in BLOCK Letters! " name="Designation" id="Designation" required>
+      	</label>
+      	</div>
+      		<button type="submit" class="submit btn" name="save">Submit</button>
+      	</div>
+      </div>
+      </div>
+
+
+
+      <script>
+
+      const signUp = document.querySelector(".signUp");
+      const modal = document.querySelector(".form-modal");
+      const close = document.querySelector(".close");
+
+      signUp.addEventListener("click",()=>{
+      	modal.style.display = "flex";
+      })
+
+      close.addEventListener("click",()=>{
+      	modal.style.display = "none";
+      })
+
+      function validate()
+      {
+      var name = document.getElementById("Name").value;
+      var phone = document.getElementById("Number").value;
+      var email = document.getElementById("EMail").value;
+      var Designation = document.getElementById("Designation").value;
+
+
+
+
+      if(name.length < 3)
+      {
+      	alert("Please Enter valid Name");
+      	return false;
+
+      }
+      if(Designation.length < 3)
+      {
+        alert("Please Enter valid Designation");
+        return false;
+
+      }
+
+
+      var reg=/^[A-Za-z-. ]+$/
+      if(reg.test(name)==false)
+      {
+      	alert("Kindly check the name entered again");
+      	return false;
+
+      }
+      if(reg.test(Designation)==false)
+      {
+        alert("Kindly check the Designation entered again");
+        return false;
+
+      }
+      function contains(list, entryD) {
+    // array matches
+      if (Array.isArray(entryD)) {
+        return entryD.some(x => list.indexOf(x) > -1);
+      }
+      // string match
+      return list.indexOf(entryD) > -1;
+        }
+      var list =
+        ["HR MANAGER","PHOTOGRAPHER","VIDEOGRAPHER","ELECTRICAL ENGINEER","PRODUCTION ENGINEER", "ENGINEER"];
+      var entryD= [Designation];
+      if ( contains(list, entryD)<1 ) {
+        alert("Please enter valid Designation");
+        return false;
+        }
+
+
+
+      if(email.indexOf("@") == -1 || email.length < 6)
+      {
+      	alert("Please enter valid Email ID");
+      	return false;
+      }
+      var mailformat = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+      if(mailformat.test(email)==false)
+      {
+      	alert("Please enter valid Email ID");
+      	return false;
+      }
+
+      if(isNaN(phone) || phone.length != 10){
+      	alert("Please Enter valid Phone Number,  Kindly don't include the country code.")
+      	return false;
+      }
+      alert("Form Submitted Successfully! We'll get right back to you! :)");
+      return true;
+      }
+
+      </script>
+
+
+    </body>
+  </html>
