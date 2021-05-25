@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body{
+	min-height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins";
+	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.title{
+	position: relative;
+	text-align: center;
+	text-transform: capitalize;
+	color: #1dd3bd;
+	margin: 10px 0;
+	color: #000000;
+	padding: 25px;
+	font-size: 2rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.title::after{
+	content: "";
+	position: absolute;
+	width: 20%; height: 2px;
+	bottom: -10px; left: 50%;
+	transform: translateX(-50%);
+	background-image: linear-gradient(to left, transparent 5%, #1dd3bd);
+}
+
+.team-row{
+	padding: 40px 0;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.member{
+	flex:1 1 250px;
+	max-width: 300px;
+	padding: 20px 10px;
+	margin:20px;
+	text-align: center;
+	transition: all 0.3s;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+.member:hover{
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	transform: translateY(-20px);
+}
+
+img{
+  	display: block;
+	width: 150px; height: 150px;
+	border-radius: 50%;
+	margin: 0 auto;
+	object-fit: cover;
+	border:4px solid #1dd3bd;
+}
+
+.member h2{
+	text-transform: uppercase;
+	margin:15px 0;
+	font-size: 24px;
+	color: #1dd3bd;
+	font-family: 'Poppins', sans-serif;
+}
+
+.member p{
+	font-size: 15px;
+	color: #838383;
+	line-height: 1.6;
+	font-family: "Poppins";
+	text-align: justify;
+	justify-content: center;
+}
+
+
+
+
+.btn{
+	padding: 15px 30px;
+	cursor: pointer;
+	outline: none;
+	background: #000000;;
+	border: 1px solid #111;
+	color: white;
+	font-family: 'Century Gothic';
+	font-size: 15px;
+	transition: all 0.4s;
+	align-items: center;
+
+}
+
+.btn:hover{
+	background-color: #;
+	color: #fff;
+	transform: translateY(-8px);
+}
+
+.form-modal{
+	width: 100%; height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content{
+	width: 450px;
+	background-color: #fff;
+	padding: 20px;
+	position: relative;
+	animation: visible 1s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes visible{
+	from{
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.content-wrapper{
+	opacity: 0;
+	animation: toRight 1s 500ms 1;
+	animation-fill-mode: forwards
+}
+
+@keyframes toRight{
+	from{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.close{
+	position: absolute;
+	font-size: 30px;
+	transform: rotate(45deg);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.close:hover{ transform: rotate(-45deg) scale(1.3); }
+
+
+
+input, textarea{
+  	width: 60%;
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+	outline: none;
+	border:1px solid #111;
+	font-family: 'Century Gothic';
+}
+
+textarea{
+	max-width: 60%; min-height: 100px;
+}
+
+.submit{
+	display: block;
+	margin: 30px auto 0;
+}
+
+
+.signUp{
+	top: 50%;
+  left: 15%;
+	align-items: center;
+	margin-left: 45%;
+	margin-bottom: 15px;
+}
+
+header{
+  width: 100%;height:auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7),
+                      rgba(0,0,0,0.7)),
+                      url('headerbg.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+header nav .logotxt{
+  text-transform: uppercase;
+  color: #3079ed;
+  float:left;
+  margin:5px;
+  color: #fff1eb;
+  font-size: 1.8rem;
+  padding: 15px;
+
+}
+
+header nav ul{
+  display: flex; list-style: none;
+}
+
+header nav ul li{ margin-left: 30px; }
+
+header nav ul li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+header nav ul li a.actives, header nav ul li a:hover{
+  color: #3079ed;
+  font-size: 1.4rem;
+}
+h1{
+text-align:center;
+padding:10px;
+}

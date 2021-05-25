@@ -1,0 +1,283 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+body {
+
+  font-family: "Poppins", sans-serif;
+    background-color:  linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+
+align-items: center;
+}
+
+
+
+a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 2rem;
+}
+a:hover{
+  color: #0D98BA;
+  font-size: 2.2rem;
+
+}
+
+
+.container {
+  flex: 0 1 1000px;
+  padding: 100px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
+  background:#ace0f0;
+
+
+}
+
+.screen {
+  position: relative;
+  background: #242424;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+
+
+
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff1eb;
+  font-size: 28px;
+
+}
+
+ .app-title a{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #3079ed;
+  font-size: 30px;
+  padding: 2px;
+
+}
+.app-title a:hover{
+  color: #ea1d6f;
+
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 25px;
+  height: 4px;
+  color: #ea1d6f;
+
+}
+
+.app-contact {
+  margin-top: auto;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family:sans-serif;
+
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #3079ed;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #ffffff;
+}
+
+.FAQ{
+  margin: 15px;
+  padding-left: 15px;
+}
+
+.faico{margin:0; padding:0; list-style:none;align-items: center;}
+.faico li{display:inline-block; margin:3px 3px 3px 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+
+.faico a{color:#FFFFFF; background-color:#000000; align-items: center;}
+.faico a:hover{color: #000000;}
+
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+.faicon-instagram:hover{background-color: #c32aa3;}
+
+
+#error_message{
+  margin-bottom: 20px;
+  background: #880015;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+  color:#ffffff;
+}
+select{
+   width: 250px;
+   height: 35px;
+   font-size: 1rem;
+   background-color:#E0FFFF;
+
+}
+optgroup{
+  color: #597234;
+  text-decoration: underline;
+}
+option{
+  color: #000000;
+
+}
+
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+header{
+  width: 100%;height:auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7),
+                      rgba(0,0,0,0.7)),
+                      url('headerbg.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+header nav .logotxt{
+  text-transform: uppercase;
+  color: #3079ed;
+  float:left;
+  margin:5px;
+  color: #fff1eb;
+  font-size: 1.8rem;
+  padding: 15px;
+
+}
+
+header nav ul{
+  display: flex; list-style: none;
+}
+
+header nav ul li{ margin-left: 30px; }
+
+header nav ul li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+  font-family: 'Poppins',sans-serif;
+}
+
+header nav ul li a.actives, header nav ul li a:hover{
+  color: #3079ed;
+  font-size: 1.4rem;
+}

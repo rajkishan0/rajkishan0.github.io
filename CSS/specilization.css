@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap")
+HTML,Body{
+font-family:'Poppins',sans-serif;
+
+}
+header{
+  width: 100%;height:auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7),
+                      rgba(0,0,0,0.7)),
+                      url('headerbg.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+header nav .logotxt{
+  text-transform: uppercase;
+  color: #3079ed;
+  float:left;
+  margin:5px;
+  color: #fff1eb;
+  font-size: 1.8rem;
+  padding: 15px;
+
+}
+
+header nav ul{
+  display: flex; list-style: none;
+}
+
+header nav ul li{ margin-left: 30px; }
+
+header nav ul li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+header nav ul li a.active, header nav ul li a:hover{
+  color: #3079ed;
+  font-size: 1.4rem;
+}
+#heading{
+  text-align: center;
+  font-family:'Poppins',sans-serif;
+  color:#000000;
+  font-size: 2.5rem;
+  padding:15px;
+
+}
+
+
+
+ p{
+  text-align: justify;
+  color: #000000;
+  font-family: Times new roman;
+  line-height: 20px;
+  font-size: 1.5rem;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'Poppins',sans-serif;
+  background: linear-gradient(to top, #ddd6f3, #faaca8);
+  min-height: 100px;
+ text-align: justify;
+  justify-content: center;
+}
+
+.blog-posts{
+  width: min(1200px, 100%);
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.post{
+  width: calc(32% - 10px);
+  overflow: hidden;
+}
+
+.post-img{
+  width: 100%;
+  border-radius: 6px;
+  transition: .3s linear;
+}
+
+.post-content{
+  background-color: #ffffffdd;
+  font-family:'Poppins',sans-serif;
+  margin: 0 20px;
+  padding: 30px;
+  border-radius: 6px;
+  transform: translateY(-60px);
+  transition: .3s linear;
+}
+
+.post-content h3{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.details{
+  font-size: 18px;
+  font-family:'Poppins',sans-serif;
+  color: #e77f67;
+}
+
+.post:hover .post-img{
+  transform: translateY(20px);
+}
+
+.post:hover .post-content{
+  transform: translateY(-80px);
+}
+
+header{
+  width: 100%;height:auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7),
+                      rgba(0,0,0,0.7)),
+                      url('headerbg.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+header nav .logotxt{
+  text-transform: uppercase;
+  color: #3079ed;
+  float:left;
+  margin:5px;
+  color: #fff1eb;
+  font-size: 1.8rem;
+  padding: 15px;
+
+}
+
+header nav ul{
+  display: flex; list-style: none;
+}
+
+header nav ul li{ margin-left: 30px; }
+
+header nav ul li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+header nav ul li a.active, header nav ul li a:hover{
+  color: #3079ed;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1200px){
+  .blog-posts{
+    justify-content: center;
+  }
+  .post{
+    width: min(600px, 100%);
+  }
+}
